@@ -80,15 +80,19 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
+              "deco-sites/masrap/sections/Auth/LogIn.tsx",
+              "deco-sites/masrap/sections/Auth/SignIn.tsx",
               "deco-sites/masrap/sections/BannerGrid.tsx",
               "deco-sites/masrap/sections/BannerPLP.tsx",
               "deco-sites/masrap/sections/Carousel.tsx",
+              "deco-sites/masrap/sections/Contact/Contact.MasRap-dev.tsx",
               "deco-sites/masrap/sections/CookieConsent.tsx",
               "deco-sites/masrap/sections/DesignSystem.tsx",
               "deco-sites/masrap/sections/Features.tsx",
               "deco-sites/masrap/sections/Footer.tsx",
               "deco-sites/masrap/sections/Header.tsx",
               "deco-sites/masrap/sections/Highlights.tsx",
+              "deco-sites/masrap/sections/ImageGallery/ImageGallery.MasRap-dev.tsx",
               "deco-sites/masrap/sections/LinkTree.tsx",
               "deco-sites/masrap/sections/ProductDetails.tsx",
               "deco-sites/masrap/sections/ProductShelf.tsx",
@@ -6928,6 +6932,52 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9tYXNyYXAvY29tcG9uZW50cy9hdXRoL2xvZ2luLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "title": "Description"
+        },
+        "linkSignIn": {
+          "type": "string",
+          "title": "Link Sign In"
+        },
+        "linkLoginFacebook": {
+          "type": "string",
+          "title": "Link Login Facebook"
+        }
+      },
+      "required": [
+        "description",
+        "linkSignIn",
+        "linkLoginFacebook"
+      ],
+      "title": "deco-sites/masrap/components/auth/login.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9tYXNyYXAvY29tcG9uZW50cy9hdXRoL3NpZ25pbi50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "title": "Description"
+        },
+        "linkLogin": {
+          "type": "string",
+          "title": "Link Login"
+        },
+        "linkSignInFacebook": {
+          "type": "string",
+          "title": "Link Sign In Facebook"
+        }
+      },
+      "required": [
+        "description",
+        "linkLogin",
+        "linkSignInFacebook"
+      ],
+      "title": "deco-sites/masrap/components/auth/signin.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
       "type": "string",
       "format": "image-uri",
@@ -7289,6 +7339,24 @@
       "required": [],
       "title": "deco-sites/masrap/components/ui/BannerCarousel.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9tYXNyYXAvY29tcG9uZW50cy9jb250YWN0L0NvbnRhY3QudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "informacao": {
+          "type": "string",
+          "title": "Informacao"
+        },
+        "link": {
+          "type": "string",
+          "title": "Link"
+        }
+      },
+      "required": [
+        "informacao",
+        "link"
+      ],
+      "title": "deco-sites/masrap/components/contact/Contact.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors": {
       "type": "object",
       "properties": {
@@ -7502,7 +7570,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&b966eeb0bbdb3699ee11b12ce6a39cc4": {
+    "ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@8d8db95779a128ccc5591f1338eefd33&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors"
@@ -7518,7 +7586,7 @@
           "required": []
         }
       ],
-      "title": "Colors&b966eeb0bbdb3699ee11b12ce6a39cc4"
+      "title": "8d8db95779a128ccc5591f1338eefd33&Colors"
     },
     "ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Miscellaneous": {
       "type": "object",
@@ -7621,7 +7689,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&b966eeb0bbdb3699ee11b12ce6a39cc4",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@8d8db95779a128ccc5591f1338eefd33&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -8247,6 +8315,44 @@
       ],
       "title": "deco-sites/masrap/components/ui/Highlights.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9tYXNyYXAvY29tcG9uZW50cy9pbWFnZUdhbGxlcnkvSW1hZ2VHYWxsZXJ5LnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "titulo": {
+          "type": "string",
+          "title": "Titulo"
+        },
+        "subTitulo": {
+          "type": "string",
+          "title": "Sub Titulo"
+        },
+        "imagem1": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Imagem1"
+        },
+        "imagem2": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Imagem2"
+        },
+        "imagem3": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Imagem3"
+        },
+        "imagem4": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Imagem4"
+        }
+      },
+      "required": [
+        "titulo",
+        "subTitulo",
+        "imagem1",
+        "imagem2",
+        "imagem3",
+        "imagem4"
+      ],
+      "title": "deco-sites/masrap/components/imageGallery/ImageGallery.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9tYXNyYXAvY29tcG9uZW50cy91aS9MaW5rVHJlZS50c3g=@Link": {
       "type": "object",
       "properties": {
@@ -8857,7 +8963,11 @@
         },
         "name": {
           "type": "string",
-          "title": "Name"
+          "title": "The audience name (will be used on cookies).",
+          "description": "Add a meaningful short word for the audience name.",
+          "maxLength": 22,
+          "minLength": 3,
+          "pattern": "^[A-Za-z0-9_]+$"
         },
         "routes": {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
@@ -8973,7 +9083,7 @@
       ],
       "title": "WorkflowRef"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6fafe0f553db3c0685828404a37be338|WorkflowRef": {
       "anyOf": [
         {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
@@ -8991,13 +9101,13 @@
           ]
         }
       ],
-      "title": "95abd76f92dd138f258080286726977e|WorkflowRef"
+      "title": "6fafe0f553db3c0685828404a37be338|WorkflowRef"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
       "type": "object",
       "properties": {
         "workflow": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6fafe0f553db3c0685828404a37be338|WorkflowRef",
           "title": "Workflow"
         },
         "id": {
@@ -10804,6 +10914,48 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvQXV0aC9Mb2dJbi50c3g=": {
+      "title": "deco-sites/masrap/sections/Auth/LogIn.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvY29tcG9uZW50cy9hdXRoL2xvZ2luLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/masrap/sections/Auth/LogIn.tsx"
+          ],
+          "default": "deco-sites/masrap/sections/Auth/LogIn.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvQXV0aC9TaWduSW4udHN4": {
+      "title": "deco-sites/masrap/sections/Auth/SignIn.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvY29tcG9uZW50cy9hdXRoL3NpZ25pbi50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/masrap/sections/Auth/SignIn.tsx"
+          ],
+          "default": "deco-sites/masrap/sections/Auth/SignIn.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvQmFubmVyR3JpZC50c3g=": {
       "title": "deco-sites/masrap/sections/BannerGrid.tsx",
       "type": "object",
@@ -10864,6 +11016,27 @@
             "deco-sites/masrap/sections/Carousel.tsx"
           ],
           "default": "deco-sites/masrap/sections/Carousel.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvQ29udGFjdC9Db250YWN0Lk1hc1JhcC1kZXYudHN4": {
+      "title": "deco-sites/masrap/sections/Contact/Contact.MasRap-dev.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvY29tcG9uZW50cy9jb250YWN0L0NvbnRhY3QudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/masrap/sections/Contact/Contact.MasRap-dev.tsx"
+          ],
+          "default": "deco-sites/masrap/sections/Contact/Contact.MasRap-dev.tsx"
         }
       }
     },
@@ -10985,6 +11158,27 @@
             "deco-sites/masrap/sections/Highlights.tsx"
           ],
           "default": "deco-sites/masrap/sections/Highlights.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvSW1hZ2VHYWxsZXJ5L0ltYWdlR2FsbGVyeS5NYXNSYXAtZGV2LnRzeA==": {
+      "title": "deco-sites/masrap/sections/ImageGallery/ImageGallery.MasRap-dev.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvY29tcG9uZW50cy9pbWFnZUdhbGxlcnkvSW1hZ2VHYWxsZXJ5LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/masrap/sections/ImageGallery/ImageGallery.MasRap-dev.tsx"
+          ],
+          "default": "deco-sites/masrap/sections/ImageGallery/ImageGallery.MasRap-dev.tsx"
         }
       }
     },
@@ -12239,6 +12433,12 @@
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvQXV0aC9Mb2dJbi50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvQXV0aC9TaWduSW4udHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvQmFubmVyR3JpZC50c3g="
         },
         {
@@ -12246,6 +12446,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvQ2Fyb3VzZWwudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvQ29udGFjdC9Db250YWN0Lk1hc1JhcC1kZXYudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvQ29va2llQ29uc2VudC50c3g="
@@ -12264,6 +12467,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvSGlnaGxpZ2h0cy50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvSW1hZ2VHYWxsZXJ5L0ltYWdlR2FsbGVyeS5NYXNSYXAtZGV2LnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAvc2VjdGlvbnMvTGlua1RyZWUudHN4"

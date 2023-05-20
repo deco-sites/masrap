@@ -2,17 +2,26 @@ import Icon from "$store/components/ui/Icon.tsx";
 
 export interface Props {
   description: string;
-  linkSignIn: string;
-  linkLoginFacebook: string;
+  linkLogin: string;
+  linkSignInFacebook: string;
 }
 
-function Auth({ description, linkSignIn, linkLoginFacebook }: Props) {
+function Auth({ description, linkLogin }: Props) {
   return (
-    <div class="h-screen w-full font-sans bg-[#e6e6e6] flex flex-col items-center justify-center">
+    <div class="h-screen w-full bg-[#e6e6e6] flex flex-col items-center justify-center">
       <div class="bg-white flex flex-col items-center justify-center p-16 w-[600px] h-[668px] shadow-md m-x-[420px]">
         <form class="flex items-center justify-center w-full flex-col gap-6">
-          <h1 class="text-[#292929] text-[48px]">Log in</h1>
+          <h1 class="text-[#292929] text-[48px]">Sign up</h1>
           <h3 class="text-[#292929] text-[18px]">{description}</h3>
+          <div class="flex flex-col gap-y-2 w-full">
+            <label htmlFor="">Name</label>
+            <input
+              class="border border-[#AAAAAA] shadow-sm h-10"
+              type="text"
+              name="name"
+              required
+            />
+          </div>
 
           <div class="flex flex-col gap-y-2 w-full">
             <label htmlFor="">E-mail</label>
@@ -44,7 +53,7 @@ function Auth({ description, linkSignIn, linkLoginFacebook }: Props) {
 
           <p>
             Already have an account?{" "}
-            <a href={linkSignIn} class="cursor-pointer underline">Sign In</a>
+            <a href={linkLogin} class="cursor-pointer underline">Log In</a>
           </p>
         </form>
       </div>
